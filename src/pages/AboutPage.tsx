@@ -41,7 +41,7 @@ const AboutPage = () => {
                 </section>
 
                 {/* Our Story */}
-                <section className="py-20 bg-slate-900/50">
+                <section className="py-20 bg-slate-900/50 relative overflow-hidden">
                     <div className="max-w-7xl mx-auto px-6">
                         <div className="grid lg:grid-cols-2 gap-16 items-center">
                             <motion.div
@@ -110,7 +110,7 @@ const AboutPage = () => {
                 </section>
 
                 {/* Timeline */}
-                <section className="py-20 bg-slate-900/50">
+                <section className="py-20 bg-slate-900/50 relative overflow-hidden">
                     <div className="max-w-4xl mx-auto px-6">
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}

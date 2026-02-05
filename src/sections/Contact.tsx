@@ -5,7 +5,7 @@ import consultationImg from '../assets/consultation.png';
 const Contact = () => {
 
     return (
-        <section id="contact" className="py-24 relative">
+        <section id="contact" className="py-24 relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="grid lg:grid-cols-2 gap-16">
                     {/* Info Side */}
