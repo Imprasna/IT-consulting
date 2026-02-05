@@ -16,7 +16,7 @@ const Footer = () => {
                             </span>
                         </div>
                         <p className="text-slate-500 text-sm leading-relaxed mb-8">
-                            Establishing excellence in IT manpower solutions for over 5 years. Connecting the world's most innovative companies with elite tech talent.
+                            Empowering global innovation with excellence in AI, IT, and BPO solutions. Delivering technical foundations for the leaders of tomorrow across Singapore, UAE, USA, and India.
                         </p>
                         <div className="flex gap-4">
                             <a href="#" className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-slate-400 hover:text-royal-gold hover:bg-white/10 transition-all" aria-label="Follow us on LinkedIn" rel="noopener noreferrer"><Linkedin className="w-5 h-5" aria-hidden="true" /></a>
@@ -30,10 +30,10 @@ const Footer = () => {
                     <div>
                         <h5 className="font-bold text-white mb-6 uppercase tracking-widest text-xs">For Businesses</h5>
                         <ul className="space-y-4 text-sm font-medium">
-                            <li><a href="#" className="text-slate-500 hover:text-royal-gold transition-colors">Permanent Staffing</a></li>
-                            <li><a href="#" className="text-slate-500 hover:text-royal-gold transition-colors">Contract Hiring</a></li>
-                            <li><a href="#" className="text-slate-500 hover:text-royal-gold transition-colors">Managed Services</a></li>
-                            <li><a href="#" className="text-slate-500 hover:text-royal-gold transition-colors">Corporate Training</a></li>
+                            <li><a href="#" className="text-slate-500 hover:text-royal-gold transition-colors">AI & ML Solutions</a></li>
+                            <li><a href="#" className="text-slate-500 hover:text-royal-gold transition-colors">Software Engineering</a></li>
+                            <li><a href="#" className="text-slate-500 hover:text-royal-gold transition-colors">Cloud & Security</a></li>
+                            <li><a href="#" className="text-slate-500 hover:text-royal-gold transition-colors">BPO Optimization</a></li>
                         </ul>
                     </div>
 

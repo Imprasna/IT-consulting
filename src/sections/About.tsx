@@ -3,10 +3,10 @@ import { Users, Building2, Globe2, Briefcase } from 'lucide-react';
 
 const About = () => {
     const stats = [
-        { label: 'Years of Excellence', value: '5+', icon: Globe2 },
-        { label: 'Successful Placements', value: '500+', icon: Users },
-        { label: 'Hiring Partners', value: '120+', icon: Building2 },
-        { label: 'Skill Domains', value: '20+', icon: Briefcase },
+        { label: 'Global Offices', value: '4+', icon: Globe2 },
+        { label: 'Solutions Delivered', value: '500+', icon: Users },
+        { label: 'Tech Partners', value: '120+', icon: Building2 },
+        { label: 'Domains Covered', value: '15+', icon: Briefcase },
     ];
 
     return (
@@ -39,13 +39,13 @@ const About = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h2 className="text-royal-gold uppercase tracking-[0.2em] text-sm font-bold mb-4">Our Legacy</h2>
+                        <h2 className="text-royal-gold uppercase tracking-[0.2em] text-sm font-bold mb-4">Our Heritage & Vision</h2>
                         <h3 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-                            Bridging the Gap Between <br />
-                            <span className="text-gradient-gold">Talent & Ambition</span>
+                            Transforming Businesses with <br />
+                            <span className="text-gradient-gold">Global Tech Solutions</span>
                         </h3>
                         <p className="text-slate-400 text-lg mb-8 leading-relaxed">
-                            Founded five years ago with a vision to redefine IT staffing, TechSprint Solution has evolved into a premier manpower agency. We don't just fill positions; we build the future of tech companies by identifying and nurturing the right talent.
+                            Founded with a mission to bridge the gap between complex business challenges and cutting-edge technology, TechSprint Solution has evolved into a global powerhouse in AI, IT, and BPO excellence. From automated operational intelligence to global delivery hubs, we provide the technical foundations for modern enterprise success.
                         </p>
 
                         <div className="grid sm:grid-cols-2 gap-6">

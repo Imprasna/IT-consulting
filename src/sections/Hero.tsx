@@ -16,42 +16,42 @@ const Hero = () => {
                 >
                     <div className="inline-flex items-center gap-2 bg-royal-gold/10 border border-royal-gold/20 px-4 py-2 rounded-full mb-6">
                         <Award className="w-4 h-4 text-royal-gold" />
-                        <span className="text-xs font-semibold text-royal-gold uppercase tracking-wider">5+ Years of Excellence in IT</span>
+                        <span className="text-xs font-semibold text-royal-gold uppercase tracking-wider">Global Technology Excellence</span>
                     </div>
 
                     <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-[1.1]">
-                        Your Trusted <br />
-                        <span className="text-gradient-gold">IT Manpower</span> <br />
-                        Partner
+                        Empowering <br />
+                        <span className="text-gradient-gold">AI, IT & BPO</span> <br />
+                        Excellence
                     </h1>
 
                     <p className="text-xl text-slate-400 mb-8 max-w-lg leading-relaxed">
-                        Connecting top-tier tech talent with industry leaders. We build the teams that drive innovation and digital transformation.
+                        From custom AI development to secure cloud infrastructure and optimized BPO services, we build the foundations of digital success.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4">
-                        <button className="gold-button flex items-center justify-center gap-2 py-4 px-8" aria-label="Hire Top Tech Talent">
-                            Hire Top Talent <ChevronRight className="w-5 h-5" aria-hidden="true" />
+                        <button className="gold-button flex items-center justify-center gap-2 py-4 px-8" aria-label="Explore Our Solutions">
+                            Explore Solutions <ChevronRight className="w-5 h-5" aria-hidden="true" />
                         </button>
                         <button className="outline-button flex items-center justify-center gap-2 py-4 px-8" aria-label="Join TechSprint Professional Network">
-                            Join Our Network
+                            About Our Mission
                         </button>
                     </div>
 
                     <div className="mt-12 flex items-center gap-8 grayscale opacity-60">
                         <div className="flex flex-col">
-                            <span className="text-2xl font-bold text-white">500+</span>
-                            <span className="text-xs text-slate-500 uppercase">Placements</span>
+                            <span className="text-2xl font-bold text-white">Global</span>
+                            <span className="text-xs text-slate-500 uppercase">Presence</span>
                         </div>
                         <div className="h-10 w-px bg-white/10" />
                         <div className="flex flex-col">
-                            <span className="text-2xl font-bold text-white">120+</span>
-                            <span className="text-xs text-slate-500 uppercase">Hiring Partners</span>
+                            <span className="text-2xl font-bold text-white">200+</span>
+                            <span className="text-xs text-slate-500 uppercase">Experts</span>
                         </div>
                         <div className="h-10 w-px bg-white/10" />
                         <div className="flex flex-col">
-                            <span className="text-2xl font-bold text-white">4.7★</span>
-                            <span className="text-xs text-slate-500 uppercase">Rating</span>
+                            <span className="text-2xl font-bold text-white">24/7</span>
+                            <span className="text-xs text-slate-500 uppercase">Support</span>
                         </div>
                     </div>
                 </motion.div>
@@ -64,8 +64,8 @@ const Hero = () => {
                 >
                     <div className="relative z-10 rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-black/50">
                         <img
-                            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
-                            alt="A diverse team of IT professionals collaborating in a modern office"
+                            src="/src/assets/hero_vision.png"
+                            alt="A futuristic visualization of AI nodes and global technology connectivity"
                             className="w-full h-[500px] object-cover"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent" />
@@ -74,8 +74,8 @@ const Hero = () => {
                         <div className="absolute bottom-6 left-6 right-6 glass p-4 rounded-xl flex items-center gap-4 animate-bounce-slow">
                             <div className="bg-green-500 w-3 h-3 rounded-full animate-pulse" />
                             <div>
-                                <p className="text-xs text-slate-400">Current Openings</p>
-                                <p className="text-sm font-bold text-white">45+ Senior Engineer Roles</p>
+                                <p className="text-xs text-slate-400">System Performance</p>
+                                <p className="text-sm font-bold text-white">Optimized & Scalable</p>
                             </div>
                         </div>
                     </div>

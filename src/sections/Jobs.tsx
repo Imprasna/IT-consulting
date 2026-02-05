@@ -60,8 +60,8 @@ const Jobs = () => {
             <div className="max-w-7xl mx-auto px-6">
                 <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
                     <div>
-                        <h2 className="text-royal-gold uppercase tracking-[0.2em] text-sm font-bold mb-4">Current Openings</h2>
-                        <h3 className="text-4xl font-bold text-white leading-tight">Elite Opportunities for <br />Tech Professionals</h3>
+                        <h2 className="text-royal-gold uppercase tracking-[0.2em] text-sm font-bold mb-4">Join Our Journey</h2>
+                        <h3 className="text-4xl font-bold text-white leading-tight">Elite Opportunities in Our <br />Global Delivery Teams</h3>
                     </div>
 
                     <div className="flex items-center gap-4 border-b border-white/10 pb-2">
