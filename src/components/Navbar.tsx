@@ -16,6 +16,17 @@ const Navbar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    useEffect(() => {
+        if (mobileMenuOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+        return () => {
+            document.body.style.overflow = 'unset';
+        };
+    }, [mobileMenuOpen]);
+
     const navLinks = [
         { name: 'About', href: '/about' },
         { name: 'Services', href: '/services' },
@@ -67,7 +78,7 @@ const Navbar = () => {
 
                 {/* Mobile Toggle */}
                 <button
-                    className="md:hidden text-white"
+                    className="md:hidden text-white relative z-50"
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                     aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
                     aria-expanded={mobileMenuOpen}
@@ -79,13 +90,13 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             {mobileMenuOpen && (
-                <div id="mobile-menu" className="md:hidden fixed inset-0 z-40 bg-primary pt-28 px-6 flex flex-col gap-6 overflow-y-auto animate-in fade-in slide-in-from-top-4">
+                <div id="mobile-menu" className="md:hidden fixed inset-0 h-[100dvh] w-screen z-40 bg-primary/98 backdrop-blur-xl pt-32 px-6 flex flex-col gap-6 overflow-y-auto animate-in fade-in slide-in-from-top-4">
                     {navLinks.map((link) => (
                         <Link
                             key={link.name}
                             to={link.href}
                             className={cn(
-                                'text-lg font-medium py-2 border-b border-white/5',
+                                'text-2xl font-serif font-bold py-3 border-b border-white/5',
                                 location.pathname === link.href ? 'text-royal-gold' : 'text-slate-100'
                             )}
                             onClick={() => setMobileMenuOpen(false)}
@@ -93,7 +104,7 @@ const Navbar = () => {
                             {link.name}
                         </Link>
                     ))}
-                    <Link to="/contact" className="gold-button w-full text-center mt-4" onClick={() => setMobileMenuOpen(false)}>Get Started</Link>
+                    <Link to="/contact" className="gold-button w-full text-center mt-8 py-4 text-lg" onClick={() => setMobileMenuOpen(false)}>Get Started</Link>
                 </div>
             )}
         </nav>
