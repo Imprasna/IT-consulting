@@ -13,6 +13,7 @@ const Contact = () => {
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
+                        className="text-center lg:text-left"
                     >
                         <h2 className="text-royal-gold uppercase tracking-[0.2em] text-sm font-bold mb-4">Get In Touch</h2>
                         <h3 className="text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">Ready to Elevate Your <br /><span className="text-gradient-gold">IT Strategy?</span></h3>
@@ -21,9 +22,9 @@ const Contact = () => {
                             Whether you're looking to hire elite talent or seeking your next breakthrough role, our team is here to guide you. Reach out for a confidential consultation.
                         </p>
 
-                        <div className="space-y-8">
+                        <div className="space-y-8 inline-block lg:block text-left">
                             <div className="flex items-start gap-6 group">
-                                <div className="bg-white/5 p-4 rounded-2xl group-hover:bg-royal-gold transition-colors">
+                                <div className="bg-white/5 p-4 rounded-2xl group-hover:bg-royal-gold transition-colors shrink-0">
                                     <Phone className="w-6 h-6 text-royal-gold group-hover:text-primary transition-colors" />
                                 </div>
                                 <div>
@@ -33,7 +34,7 @@ const Contact = () => {
                             </div>
 
                             <div className="flex items-start gap-6 group">
-                                <div className="bg-white/5 p-4 rounded-2xl group-hover:bg-royal-gold transition-colors">
+                                <div className="bg-white/5 p-4 rounded-2xl group-hover:bg-royal-gold transition-colors shrink-0">
                                     <Mail className="w-6 h-6 text-royal-gold group-hover:text-primary transition-colors" />
                                 </div>
                                 <div>
@@ -43,7 +44,7 @@ const Contact = () => {
                             </div>
 
                             <div className="flex items-start gap-6 group">
-                                <div className="bg-white/5 p-4 rounded-2xl group-hover:bg-royal-gold transition-colors">
+                                <div className="bg-white/5 p-4 rounded-2xl group-hover:bg-royal-gold transition-colors shrink-0">
                                     <MapPin className="w-6 h-6 text-royal-gold group-hover:text-primary transition-colors" />
                                 </div>
                                 <div>

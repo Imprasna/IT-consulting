@@ -79,13 +79,13 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             {mobileMenuOpen && (
-                <div id="mobile-menu" className="md:hidden absolute top-full left-0 right-0 glass border-t border-white/10 p-6 flex flex-col gap-4 animate-in fade-in slide-in-from-top-4">
+                <div id="mobile-menu" className="md:hidden fixed inset-0 top-[70px] bg-primary z-40 p-6 flex flex-col gap-6 overflow-y-auto animate-in fade-in slide-in-from-top-4">
                     {navLinks.map((link) => (
                         <Link
                             key={link.name}
                             to={link.href}
                             className={cn(
-                                'text-lg font-medium',
+                                'text-lg font-medium py-2 border-b border-white/5',
                                 location.pathname === link.href ? 'text-royal-gold' : 'text-slate-100'
                             )}
                             onClick={() => setMobileMenuOpen(false)}
@@ -93,7 +93,7 @@ const Navbar = () => {
                             {link.name}
                         </Link>
                     ))}
-                    <Link to="/contact" className="gold-button w-full text-center" onClick={() => setMobileMenuOpen(false)}>Get Started</Link>
+                    <Link to="/contact" className="gold-button w-full text-center mt-4" onClick={() => setMobileMenuOpen(false)}>Get Started</Link>
                 </div>
             )}
         </nav>
