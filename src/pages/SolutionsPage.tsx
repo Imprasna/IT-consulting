@@ -42,48 +42,22 @@ const SolutionsPage = () => {
                 {/* Solutions Grid */}
                 <section className="py-20">
                     <div className="max-w-7xl mx-auto px-6">
-                        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
-                            {solutions.slice(0, 5).map((solution, idx) => (
+                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            {solutions.map((solution, idx) => (
                                 <motion.div
                                     key={solution.title}
                                     initial={{ opacity: 0, y: 30 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
-                                    transition={{ delay: idx * 0.1 }}
-                                    className={`p-6 rounded-2xl border transition-all group cursor-pointer ${solution.featured
-                                            ? 'bg-gradient-to-br from-green-500/80 to-green-600/80 border-green-400/50'
-                                            : 'bg-white/5 border-white/10 hover:border-royal-gold/30'
-                                        }`}
+                                    transition={{ delay: idx * 0.05 }}
+                                    className="p-6 rounded-2xl glass border border-white/10 hover:border-royal-gold/30 transition-all group cursor-pointer"
                                 >
-                                    <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${solution.featured ? 'bg-white/20' : 'bg-royal-gold/20'
-                                        }`}>
-                                        <solution.icon className={`w-6 h-6 ${solution.featured ? 'text-white' : 'text-royal-gold'}`} />
-                                    </div>
-                                    <h3 className={`text-lg font-bold mb-2 ${solution.featured ? 'text-white' : 'text-white'}`}>{solution.title}</h3>
-                                    <p className={`text-sm mb-4 ${solution.featured ? 'text-white/80' : 'text-slate-400'}`}>{solution.desc}</p>
-                                    <button className={`text-sm font-medium ${solution.featured ? 'text-white underline' : 'text-royal-gold'}`}>
-                                        Learn More
-                                    </button>
-                                </motion.div>
-                            ))}
-                        </div>
-
-                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
-                            {solutions.slice(5).map((solution, idx) => (
-                                <motion.div
-                                    key={solution.title}
-                                    initial={{ opacity: 0, y: 30 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
-                                    transition={{ delay: idx * 0.1 }}
-                                    className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-royal-gold/30 transition-all group cursor-pointer"
-                                >
-                                    <div className="w-12 h-12 rounded-xl bg-royal-gold/20 flex items-center justify-center mb-4">
-                                        <solution.icon className="w-6 h-6 text-royal-gold" />
+                                    <div className="w-12 h-12 rounded-xl bg-royal-gold/20 flex items-center justify-center mb-4 group-hover:bg-royal-gold transition-colors">
+                                        <solution.icon className="w-6 h-6 text-royal-gold group-hover:text-primary transition-colors" />
                                     </div>
                                     <h3 className="text-lg font-bold text-white mb-2">{solution.title}</h3>
                                     <p className="text-slate-400 text-sm mb-4">{solution.desc}</p>
-                                    <button className="text-royal-gold text-sm font-medium">Learn More</button>
+                                    <button className="text-royal-gold text-sm font-medium hover:underline">Learn More</button>
                                 </motion.div>
                             ))}
                         </div>

@@ -4,15 +4,12 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 const ExpertisePage = () => {
-    const expertiseRow1 = [
+    const expertise = [
         { title: 'Healthcare', desc: 'Optimizing patient care and digital health solutions.', icon: Heart },
         { title: 'Education', desc: 'Digital transformation in learning.', icon: GraduationCap },
         { title: 'E-Governance', desc: 'Smart governance for citizens.', icon: Landmark },
         { title: 'Finance', desc: 'Secure and scalable fintech solutions.', icon: TrendingUp },
         { title: 'Sports', desc: 'Data-driven sports analytics.', icon: Trophy },
-    ];
-
-    const expertiseRow2 = [
         { title: 'Travel & Tourism', desc: 'AI-powered trip planning.', icon: Globe2 },
         { title: 'Retail & E-commerce', desc: 'Modern retail experiences.', icon: ShoppingBag },
         { title: 'Aviation', desc: 'Innovation for air travel.', icon: Plane },
@@ -31,7 +28,7 @@ const ExpertisePage = () => {
                             animate={{ opacity: 1, y: 0 }}
                             className="max-w-4xl"
                         >
-                            <h2 className="text-green-500 uppercase tracking-widest text-sm font-bold mb-4">Industry Expertise</h2>
+                            <h2 className="text-royal-gold uppercase tracking-widest text-sm font-bold mb-4">Industry Expertise</h2>
                             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
                                 Deep Domain Knowledge Across Industries
                             </h1>
@@ -42,45 +39,18 @@ const ExpertisePage = () => {
                     </div>
                 </section>
 
-                {/* Expertise Grid Row 1 */}
-                <section className="py-10">
-                    <div className="max-w-7xl mx-auto px-6">
-                        <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
-                            {expertiseRow1.map((item, idx) => (
-                                <motion.div
-                                    key={item.title}
-                                    initial={{ opacity: 0, y: 30 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
-                                    transition={{ delay: idx * 0.1 }}
-                                    className="p-6 rounded-2xl glass border border-white/10 text-center group hover:border-royal-gold/30 transition-all"
-                                >
-                                    <div className="w-14 h-14 rounded-xl bg-royal-gold/20 flex items-center justify-center mb-4 mx-auto group-hover:bg-royal-gold transition-colors">
-                                        <item.icon className="w-7 h-7 text-royal-gold group-hover:text-primary transition-colors" />
-                                    </div>
-                                    <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
-                                    <p className="text-slate-400 text-sm mb-4">{item.desc}</p>
-                                    <button className="w-full py-2 rounded-lg bg-royal-gold/20 text-royal-gold text-sm font-medium hover:bg-royal-gold hover:text-primary transition-colors">
-                                        Learn More
-                                    </button>
-                                </motion.div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-
-                {/* Expertise Grid Row 2 */}
+                {/* Expertise Grid */}
                 <section className="py-10 pb-24">
-                    <div className="max-w-6xl mx-auto px-6">
-                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                            {expertiseRow2.map((item, idx) => (
+                    <div className="max-w-7xl mx-auto px-6">
+                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            {expertise.map((item, idx) => (
                                 <motion.div
                                     key={item.title}
                                     initial={{ opacity: 0, y: 30 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
-                                    transition={{ delay: idx * 0.1 }}
-                                    className="p-6 rounded-2xl glass border border-white/10 text-center group hover:border-royal-gold/30 transition-all"
+                                    transition={{ delay: idx * 0.05 }}
+                                    className="p-6 rounded-2xl glass border border-white/10 text-center group hover:border-royal-gold/30 transition-all cursor-pointer"
                                 >
                                     <div className="w-14 h-14 rounded-xl bg-royal-gold/20 flex items-center justify-center mb-4 mx-auto group-hover:bg-royal-gold transition-colors">
                                         <item.icon className="w-7 h-7 text-royal-gold group-hover:text-primary transition-colors" />
