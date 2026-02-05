@@ -53,14 +53,14 @@ const ExpertisePage = () => {
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ delay: idx * 0.1 }}
-                                    className="p-6 rounded-2xl bg-white border border-gray-200 shadow-lg text-center group hover:shadow-xl transition-all"
+                                    className="p-6 rounded-2xl glass border border-white/10 text-center group hover:border-royal-gold/30 transition-all"
                                 >
-                                    <div className="w-14 h-14 rounded-xl bg-royal-blue/10 flex items-center justify-center mb-4 mx-auto">
-                                        <item.icon className="w-7 h-7 text-royal-blue" />
+                                    <div className="w-14 h-14 rounded-xl bg-royal-gold/20 flex items-center justify-center mb-4 mx-auto group-hover:bg-royal-gold transition-colors">
+                                        <item.icon className="w-7 h-7 text-royal-gold group-hover:text-primary transition-colors" />
                                     </div>
-                                    <h3 className="text-lg font-bold text-green-600 mb-2">{item.title}</h3>
-                                    <p className="text-gray-600 text-sm mb-4">{item.desc}</p>
-                                    <button className="w-full py-2 rounded-lg bg-gradient-to-r from-royal-blue to-green-500 text-white text-sm font-medium">
+                                    <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
+                                    <p className="text-slate-400 text-sm mb-4">{item.desc}</p>
+                                    <button className="w-full py-2 rounded-lg bg-royal-gold/20 text-royal-gold text-sm font-medium hover:bg-royal-gold hover:text-primary transition-colors">
                                         Learn More
                                     </button>
                                 </motion.div>
@@ -80,14 +80,14 @@ const ExpertisePage = () => {
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ delay: idx * 0.1 }}
-                                    className="p-6 rounded-2xl bg-white border border-gray-200 shadow-lg text-center group hover:shadow-xl transition-all"
+                                    className="p-6 rounded-2xl glass border border-white/10 text-center group hover:border-royal-gold/30 transition-all"
                                 >
-                                    <div className="w-14 h-14 rounded-xl bg-royal-blue/10 flex items-center justify-center mb-4 mx-auto">
-                                        <item.icon className="w-7 h-7 text-royal-blue" />
+                                    <div className="w-14 h-14 rounded-xl bg-royal-gold/20 flex items-center justify-center mb-4 mx-auto group-hover:bg-royal-gold transition-colors">
+                                        <item.icon className="w-7 h-7 text-royal-gold group-hover:text-primary transition-colors" />
                                     </div>
-                                    <h3 className="text-lg font-bold text-green-600 mb-2">{item.title}</h3>
-                                    <p className="text-gray-600 text-sm mb-4">{item.desc}</p>
-                                    <button className="w-full py-2 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 text-white text-sm font-medium">
+                                    <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
+                                    <p className="text-slate-400 text-sm mb-4">{item.desc}</p>
+                                    <button className="w-full py-2 rounded-lg bg-royal-gold/20 text-royal-gold text-sm font-medium hover:bg-royal-gold hover:text-primary transition-colors">
                                         Learn More
                                     </button>
                                 </motion.div>

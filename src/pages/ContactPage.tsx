@@ -6,9 +6,6 @@ import Footer from '../components/Footer';
 const ContactPage = () => {
     const offices = [
         { city: 'Chennai, India', address: '123 Tech Park, OMR Road', phone: '+91 800 123 4567' },
-        { city: 'Singapore', address: '456 Marina Bay Financial Centre', phone: '+65 1234 5678' },
-        { city: 'Dubai, UAE', address: '789 Business Bay Tower', phone: '+971 4 123 4567' },
-        { city: 'USA', address: '101 Silicon Valley Blvd', phone: '+1 800 123 4567' },
     ];
 
     return (
@@ -99,8 +96,8 @@ const ContactPage = () => {
                                     <h3 className="text-lg font-bold text-white mb-2 flex items-center gap-2">
                                         <Mail className="w-5 h-5 text-royal-gold" /> General Inquiries
                                     </h3>
-                                    <a href="mailto:contact@techsprintsolution.com" className="text-royal-gold hover:underline">
-                                        contact@techsprintsolution.com
+                                    <a href="mailto:techsprintsolutions.2020@gmail.com" className="text-royal-gold hover:underline">
+                                        techsprintsolutions.2020@gmail.com
                                     </a>
                                 </div>
                             </motion.div>
