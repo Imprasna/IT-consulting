@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Building2 } from 'lucide-react';
 import { cn } from '../lib/utils';
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const location = useLocation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -15,11 +17,12 @@ const Navbar = () => {
     }, []);
 
     const navLinks = [
-        { name: 'About', href: '#about' },
-        { name: 'Services', href: '#services' },
-        { name: 'Jobs', href: '#jobs' },
-        { name: 'Reviews', href: '#reviews' },
-        { name: 'Contact', href: '#contact' },
+        { name: 'About', href: '/about' },
+        { name: 'Services', href: '/services' },
+        { name: 'Solutions', href: '/solutions' },
+        { name: 'Expertise', href: '/expertise' },
+        { name: 'Careers', href: '/careers' },
+        { name: 'Contact', href: '/contact' },
     ];
 
     return (
@@ -30,30 +33,36 @@ const Navbar = () => {
             )}
         >
             <div className="max-w-7xl mx-auto flex items-center justify-between">
-                <a href="#" className="flex items-center gap-2 group cursor-pointer" aria-label="TechSprint Solution Home">
+                <Link to="/" className="flex items-center gap-2 group cursor-pointer" aria-label="TechSprint Solution Home">
                     <div className="bg-gold-gradient p-2 rounded-lg group-hover:rotate-12 transition-transform">
                         <Building2 className="text-primary w-6 h-6" aria-hidden="true" />
                     </div>
                     <span className="text-2xl font-serif font-bold tracking-tight text-white">
-                        TechSprint<span className="text-royal-gold"> Solution</span>
+                        TechSprint<span className="text-royal-gold">Solution</span>
                     </span>
-                </a>
+                </Link>
 
                 {/* Desktop Links */}
-                <div className="hidden md:flex items-center gap-8">
+                <div className="hidden md:flex items-center gap-6">
                     {navLinks.map((link) => (
-                        <a
+                        <Link
                             key={link.name}
-                            href={link.href}
-                            className="text-sm font-medium text-slate-300 hover:text-royal-gold transition-colors relative group"
+                            to={link.href}
+                            className={cn(
+                                'text-sm font-medium transition-colors relative group',
+                                location.pathname === link.href ? 'text-royal-gold' : 'text-slate-300 hover:text-royal-gold'
+                            )}
                         >
                             {link.name}
-                            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-royal-gold transition-all group-hover:w-full" />
-                        </a>
+                            <span className={cn(
+                                'absolute -bottom-1 left-0 h-0.5 bg-royal-gold transition-all',
+                                location.pathname === link.href ? 'w-full' : 'w-0 group-hover:w-full'
+                            )} />
+                        </Link>
                     ))}
-                    <button className="gold-button py-2 text-sm" aria-label="Hire Talent from TechSprint">
-                        Hire Talent
-                    </button>
+                    <Link to="/contact" className="gold-button py-2 text-sm" aria-label="Get Started with TechSprint">
+                        Get Started
+                    </Link>
                 </div>
 
                 {/* Mobile Toggle */}
@@ -72,16 +81,19 @@ const Navbar = () => {
             {mobileMenuOpen && (
                 <div id="mobile-menu" className="md:hidden absolute top-full left-0 right-0 glass border-t border-white/10 p-6 flex flex-col gap-4 animate-in fade-in slide-in-from-top-4">
                     {navLinks.map((link) => (
-                        <a
+                        <Link
                             key={link.name}
-                            href={link.href}
-                            className="text-lg font-medium text-slate-100"
+                            to={link.href}
+                            className={cn(
+                                'text-lg font-medium',
+                                location.pathname === link.href ? 'text-royal-gold' : 'text-slate-100'
+                            )}
                             onClick={() => setMobileMenuOpen(false)}
                         >
                             {link.name}
-                        </a>
+                        </Link>
                     ))}
-                    <button className="gold-button w-full">Hire Talent</button>
+                    <Link to="/contact" className="gold-button w-full text-center" onClick={() => setMobileMenuOpen(false)}>Get Started</Link>
                 </div>
             )}
         </nav>
