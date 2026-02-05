@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Phone, Mail, MapPin } from 'lucide-react';
+import consultationImg from '../assets/consultation.png';
 
 const Contact = () => {
 
@@ -61,7 +62,7 @@ const Contact = () => {
                         className="relative group rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl h-full min-h-[400px]"
                     >
                         <img
-                            src="/src/assets/consultation.png"
+                            src={consultationImg}
                             alt="Consultation Room"
                             className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                         />
