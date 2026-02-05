@@ -22,14 +22,14 @@ const Contact = () => {
                             Whether you're looking to hire elite talent or seeking your next breakthrough role, our team is here to guide you. Reach out for a confidential consultation.
                         </p>
 
-                        <div className="space-y-8 inline-block lg:block text-left">
+                        <div className="space-y-8 max-w-lg mx-auto lg:mx-0 text-left">
                             <div className="flex items-start gap-6 group">
                                 <div className="bg-white/5 p-4 rounded-2xl group-hover:bg-royal-gold transition-colors shrink-0">
                                     <Phone className="w-6 h-6 text-royal-gold group-hover:text-primary transition-colors" />
                                 </div>
                                 <div>
                                     <p className="text-xs text-slate-500 uppercase tracking-widest font-bold mb-1">Call Us</p>
-                                    <p className="text-xl font-bold text-white">+91 (800) 123-4567</p>
+                                    <p className="text-xl font-bold text-white break-words">+91 (800) 123-4567</p>
                                 </div>
                             </div>
 
@@ -39,7 +39,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <p className="text-xs text-slate-500 uppercase tracking-widest font-bold mb-1">Email Us</p>
-                                    <p className="text-xl font-bold text-white">consult@techsprintsolution.com</p>
+                                    <p className="text-xl font-bold text-white break-all">consult@techsprintsolution.com</p>
                                 </div>
                             </div>
 
@@ -49,7 +49,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <p className="text-xs text-slate-500 uppercase tracking-widest font-bold mb-1">Visit Us</p>
-                                    <p className="text-lg font-bold text-white">Executive Hub, Level 4, Tech Park, Bangalore, India</p>
+                                    <p className="text-lg font-bold text-white break-words">Executive Hub, Level 4, Tech Park, Bangalore, India</p>
                                 </div>
                             </div>
                         </div>
