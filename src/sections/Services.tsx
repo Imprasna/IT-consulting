@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Database, Cloud, Shield, Layout, Laptop, Building2, Globe2 ,Boxes,
+import { Database, Cloud, Shield, Layout, Laptop, Building2, Boxes,
   Atom,
   Server,
   Code2,

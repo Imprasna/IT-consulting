@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { Users, Building2, Globe2, Briefcase } from 'lucide-react';
-import VisionariesSection from '../components/Visionaries';
 
 const About = () => {
     const stats = [
