@@ -46,8 +46,8 @@ const Navbar = () => {
         >
             <div className="max-w-7xl mx-auto flex items-center justify-between">
                 <Link to="/" className="flex items-center gap-2 group cursor-pointer" aria-label="TechSprint Solution Home">
-                    <div className="bg-gold-gradient p-2 rounded-lg group-hover:rotate-12 transition-transform">
-                        <Building2 className="text-primary w-6 h-6" aria-hidden="true" />
+                    <div className="bg-gold-gradient overflow-hidden rounded-4xl group-hover:rotate-12 transition-transform">
+                        <img src="/TechSprintSolutionLogo.png" alt="TechSprint Logo" className="w-14 h-14" />
                     </div>
                     <span className="text-2xl font-serif font-bold tracking-tight text-white">
                         TechSprint<span className="text-royal-gold">Solution</span>

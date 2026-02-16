@@ -12,8 +12,8 @@ const Footer = () => {
                     <div>
                         <div className="flex flex-col items-left">
                             <div className="flex items-center gap-2 mb-4">
-                                <div className="bg-gold-gradient p-1.5 rounded-lg">
-                                    <Building2 className="text-primary w-5 h-5" />
+                                <div className="bg-gold-gradient overflow-hidden rounded-xl">
+                                    <img src="/TechSprintSolutionLogo.png" alt="TechSprint Logo" className="w-10 h-10" />
                                 </div>
 
                                 <span className="text-2xl font-serif font-bold tracking-tight text-white">
