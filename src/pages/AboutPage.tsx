@@ -2,6 +2,8 @@ import { motion } from 'framer-motion';
 import { Target, Users, Globe2, Award, CheckCircle2 } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import VisionariesSection from '../components/Visionaries';
+import HiringJourney from '../components/Hiring';
 
 const AboutPage = () => {
     const values = [
@@ -19,7 +21,7 @@ const AboutPage = () => {
     ];
 
     return (
-        <div className="min-h-screen bg-primary">
+        <div className="min-h-screen bg-slate-50 dark:bg-primary">
             <Navbar />
             <main>
                 {/* Hero */}
@@ -30,7 +32,7 @@ const AboutPage = () => {
                             animate={{ opacity: 1, y: 0 }}
                             className="text-center max-w-4xl mx-auto"
                         >
-                            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
+                            <h1 className="text-5xl md:text-6xl font-bold text-slate-900 dark:text-white mb-6">
                                 About <span className="text-gradient-gold">TechSprint</span>
                             </h1>
                             <p className="text-xl text-slate-400 leading-relaxed">
@@ -50,7 +52,7 @@ const AboutPage = () => {
                                 viewport={{ once: true }}
                             >
                                 <h2 className="text-royal-gold uppercase tracking-widest text-sm font-bold mb-4">Our Story</h2>
-                                <h3 className="text-4xl font-bold text-white mb-6">
+                                <h3 className="text-4xl font-bold text-slate-900 dark:text-white mb-6">
                                     From Vision to <span className="text-gradient-gold">Global Impact</span>
                                 </h3>
                                 <p className="text-slate-400 text-lg leading-relaxed mb-6">
@@ -69,7 +71,7 @@ const AboutPage = () => {
                                 <img
                                     src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
                                     alt="TechSprint Team"
-                                    className="rounded-3xl border border-white/10 shadow-2xl"
+                                    className="rounded-3xl border border-cyan-500 dark:border-white/10 shadow-2xl"
                                 />
                             </motion.div>
                         </div>
@@ -85,7 +87,7 @@ const AboutPage = () => {
                             viewport={{ once: true }}
                             className="text-center mb-16"
                         >
-                            <h2 className="text-4xl font-bold text-white mb-4">Our Core Values</h2>
+                            <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">Our Core Values</h2>
                             <p className="text-slate-400 max-w-2xl mx-auto">The principles that guide everything we do.</p>
                         </motion.div>
                         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -96,12 +98,12 @@ const AboutPage = () => {
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ delay: idx * 0.1 }}
-                                    className="p-6 rounded-2xl glass border border-white/10 text-center"
+                                    className="p-6 rounded-2xl glass border border-cyan-500 dark:border-white/10 text-center"
                                 >
                                     <div className="w-14 h-14 rounded-full bg-royal-gold/20 flex items-center justify-center mb-4 mx-auto">
                                         <value.icon className="w-7 h-7 text-royal-gold" />
                                     </div>
-                                    <h4 className="text-xl font-bold text-white mb-2">{value.title}</h4>
+                                    <h4 className="text-xl font-bold text-slate-900 dark:text-white mb-2">{value.title}</h4>
                                     <p className="text-slate-400 text-sm">{value.desc}</p>
                                 </motion.div>
                             ))}
@@ -118,7 +120,7 @@ const AboutPage = () => {
                             viewport={{ once: true }}
                             className="text-center mb-16"
                         >
-                            <h2 className="text-4xl font-bold text-white mb-4">Our Journey</h2>
+                            <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">Our Journey</h2>
                         </motion.div>
                         <div className="space-y-8">
                             {milestones.map((milestone, idx) => (
@@ -133,7 +135,7 @@ const AboutPage = () => {
                                         <span className="text-royal-gold font-bold text-xl">{milestone.year}</span>
                                     </div>
                                     <div className="flex-1 p-4 rounded-xl bg-white/5 border border-white/10">
-                                        <p className="text-white font-medium flex items-center gap-2">
+                                        <p className="text-slate-900 dark:text-white font-medium flex items-center gap-2">
                                             <CheckCircle2 className="w-5 h-5 text-green-500" />
                                             {milestone.event}
                                         </p>
@@ -143,6 +145,8 @@ const AboutPage = () => {
                         </div>
                     </div>
                 </section>
+                        <VisionariesSection />
+                        <HiringJourney />
             </main>
             <Footer />
         </div>

@@ -17,7 +17,7 @@ const SolutionsPage = () => {
     ];
 
     return (
-        <div className="min-h-screen bg-primary">
+        <div className="min-h-screen bg-slate-50 dark:bg-primary">
             <Navbar />
             <main>
                 {/* Hero */}
@@ -50,12 +50,12 @@ const SolutionsPage = () => {
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ delay: idx * 0.05 }}
-                                    className="p-6 rounded-2xl glass border border-white/10 hover:border-royal-gold/30 transition-all group cursor-pointer"
+                                    className="p-6 rounded-2xl glass border border-cyan-500 dark:border-white/10 hover:border-royal-gold/30 transition-all group cursor-pointer"
                                 >
                                     <div className="w-12 h-12 rounded-xl bg-royal-gold/20 flex items-center justify-center mb-4 group-hover:bg-royal-gold transition-colors">
                                         <solution.icon className="w-6 h-6 text-royal-gold group-hover:text-primary transition-colors" />
                                     </div>
-                                    <h3 className="text-lg font-bold text-white mb-2">{solution.title}</h3>
+                                    <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2">{solution.title}</h3>
                                     <p className="text-slate-400 text-sm mb-4">{solution.desc}</p>
                                     <button className="text-royal-gold text-sm font-medium hover:underline">Learn More</button>
                                 </motion.div>

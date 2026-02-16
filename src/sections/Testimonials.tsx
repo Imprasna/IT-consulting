@@ -45,7 +45,7 @@ const Testimonials = () => {
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-royal-gold uppercase tracking-[0.2em] text-sm font-bold mb-4">Voice of Experience</h2>
-                    <h3 className="text-4xl font-bold text-white mb-6">Trusted by Thousands</h3>
+                    <h3 className="text-4xl font-bold text-slate-900 dark:text-white mb-6">Trusted by Thousands</h3>
                 </div>
 
                 <div className="grid lg:grid-cols-3 gap-8 mb-20">
@@ -56,7 +56,7 @@ const Testimonials = () => {
                             viewport={{ once: true }}
                             transition={{ delay: i * 0.1 }}
                             key={testi.name}
-                            className="p-8 rounded-3xl bg-white/[0.03] border border-white/5 relative"
+                            className="p-8 rounded-3xl bg-white/[0.03] border border-cyan-500 dark:border-white/5 relative"
                         >
                             <Quote className="absolute top-6 right-6 w-10 h-10 text-royal-gold/10" />
                             <div className="flex gap-1 mb-6">
@@ -68,7 +68,7 @@ const Testimonials = () => {
                             <div className="flex items-center gap-4">
                                 <img src={testi.image} alt={testi.name} className="w-12 h-12 rounded-full object-cover border-2 border-royal-gold/30" />
                                 <div>
-                                    <h5 className="font-bold text-white leading-none whitespace-nowrap">{testi.name}</h5>
+                                    <h5 className="font-bold text-slate-900 dark:text-white leading-none whitespace-nowrap">{testi.name}</h5>
                                     <p className="text-[10px] text-slate-500 uppercase tracking-widest mt-1">{testi.role} • {testi.company}</p>
                                 </div>
                             </div>
@@ -76,7 +76,7 @@ const Testimonials = () => {
                     ))}
                 </div>
 
-                <div className="pt-20 border-t border-white/5">
+                <div className="pt-20 border-t border-cyan-500 dark:border-white/5">
                     <p className="text-center text-slate-500 uppercase tracking-widest text-xs font-bold mb-12">Our Placed Talents work at</p>
                     <div className="flex flex-wrap justify-center gap-12 md:gap-20 grayscale opacity-30 hover:opacity-70 transition-opacity">
                         {logos.map((logo, i) => (

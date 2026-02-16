@@ -15,7 +15,7 @@ const Industries = () => {
     ];
 
     return (
-        <section id="industries" className="py-24 bg-primary relative overflow-hidden">
+        <section id="industries" className="py-24 bg-slate-50 dark:bg-primary relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-6">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -23,7 +23,7 @@ const Industries = () => {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Industries We Serve</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">Industries We Serve</h2>
                     <p className="text-slate-400 max-w-3xl mx-auto text-lg leading-relaxed">
                         We bring deep domain expertise across diverse industries, ensuring reliable and scalable technology delivery.
                     </p>
@@ -37,12 +37,12 @@ const Industries = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: idx * 0.05 }}
-                            className="p-6 rounded-2xl bg-primary-light border border-white/10 hover:border-green-500/30 transition-all group cursor-pointer"
+                            className="p-6 rounded-2xl bg-primary-light border border-cyan-500 dark:border-white/10 hover:border-green-500/30 transition-all group cursor-pointer"
                         >
                             <div className="w-14 h-14 rounded-full bg-green-500/20 flex items-center justify-center mb-4 group-hover:bg-green-500 transition-colors mx-auto">
                                 <industry.icon className="w-7 h-7 text-green-500 group-hover:text-white transition-colors" />
                             </div>
-                            <h3 className="text-xl font-bold text-white text-center mb-2">{industry.title}</h3>
+                            <h3 className="text-xl font-bold text-slate-900 dark:text-white text-center mb-2">{industry.title}</h3>
                             <p className="text-slate-500 text-sm text-center">{industry.desc}</p>
                         </motion.div>
                     ))}

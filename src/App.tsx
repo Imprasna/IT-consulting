@@ -21,7 +21,7 @@ import ContactPage from './pages/ContactPage';
 
 // Home Page Component
 const HomePage = () => (
-  <div className="min-h-screen bg-primary selection:bg-royal-gold/30 selection:text-royal-gold overflow-x-hidden">
+  <div className="min-h-screen bg-slate-50 dark:bg-primary selection:bg-royal-gold/30 selection:text-royal-gold overflow-x-hidden">
     <Navbar />
     <main>
       <Hero />

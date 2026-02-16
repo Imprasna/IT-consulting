@@ -1,14 +1,18 @@
 import { motion } from 'framer-motion';
 import { ChevronRight, Award } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
+    const navigate = useNavigate();
+
+    
     return (
         <section className="relative min-height-[90vh] flex items-center pt-20 overflow-hidden">
             {/* Background Orbs */}
             <div className="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-royal-blue/20 rounded-full blur-[120px] pointer-events-none" />
             <div className="absolute bottom-[-10%] left-[-10%] w-[400px] h-[400px] bg-royal-gold/10 rounded-full blur-[100px] pointer-events-none" />
 
-            <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
+            <div className="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center relative z-10">
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
@@ -19,21 +23,21 @@ const Hero = () => {
                         <span className="text-xs font-semibold text-royal-gold uppercase tracking-wider">Global Technology Excellence</span>
                     </div>
 
-                    <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-[1.1]">
+                    <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-[1.1]">
                         Empowering <br />
-                        <span className="text-gradient-gold">AI, IT & BPO</span> <br />
-                        Excellence
+                        <span className="text-gradient-gold">businesses through</span> <br />
+                        Digital Excellence
                     </h1>
 
                     <p className="text-xl text-slate-400 mb-8 max-w-lg leading-relaxed">
-                        From custom AI development to secure cloud infrastructure and optimized BPO services, we build the foundations of digital success.
+                        Empowering global enterprises with cutting-edge SaaS solutions, robust IT consulting, and bespoke software development designed for the future.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4">
-                        <button className="gold-button flex items-center justify-center gap-2 py-4 px-8" aria-label="Explore Our Solutions">
+                        <button onClick={() => navigate("/solutions")} className="gold-button flex items-center justify-center gap-2 py-4 px-8" aria-label="Explore Our Solutions">
                             Explore Solutions <ChevronRight className="w-5 h-5" aria-hidden="true" />
                         </button>
-                        <button className="outline-button flex items-center justify-center gap-2 py-4 px-8" aria-label="Join TechSprint Professional Network">
+                        <button onClick={() => navigate("/about")} className="outline-button flex items-center justify-center gap-2 py-4 px-8" aria-label="Join TechSprint Professional Network">
                             About Our Mission
                         </button>
                     </div>

@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import Services from '../sections/Services';
 import DesignDevelopment from '../sections/DesignDevelopment';
 import CloudHosting from '../sections/CloudHosting';
+import Models from '../components/Models';
 
 const ServicesPage = () => {
     return (
@@ -31,6 +32,7 @@ const ServicesPage = () => {
                 <Services />
                 <DesignDevelopment />
                 <CloudHosting />
+                <Models />
             </main>
             <Footer />
         </div>

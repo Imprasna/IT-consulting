@@ -22,7 +22,7 @@ const DesignDevelopment = () => {
                         viewport={{ once: true }}
                         className="relative"
                     >
-                        <div className="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+                        <div className="relative rounded-3xl overflow-hidden border border-cyan-500 dark:border-white/10 shadow-2xl">
                             <img
                                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
                                 alt="Team collaborating on design and development"
@@ -40,7 +40,7 @@ const DesignDevelopment = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                     >
-                        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Design & Development</h2>
+                        <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">Design & Development</h2>
                         <p className="text-slate-400 text-lg mb-10 leading-relaxed">
                             We offer a comprehensive portfolio of AI, IT, and software services designed to meet modern business challenges.
                         </p>
@@ -58,7 +58,7 @@ const DesignDevelopment = () => {
                                     <div className="w-10 h-10 rounded-lg bg-green-500/20 flex items-center justify-center group-hover:bg-green-500 transition-colors">
                                         <service.icon className="w-5 h-5 text-green-500 group-hover:text-white transition-colors" />
                                     </div>
-                                    <span className="text-white text-sm font-medium">{service.title}</span>
+                                    <span className="text-slate-900 dark:text-white text-sm font-medium">{service.title}</span>
                                 </motion.div>
                             ))}
                         </div>
