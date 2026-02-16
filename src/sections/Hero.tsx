@@ -68,7 +68,7 @@ const Hero = () => {
                 >
                     <div className="relative z-10 rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-black/50">
                         <img
-                            src="/src/assets/hero_vision.png"
+                            src="/assets/hero_vision.png"
                             alt="A futuristic visualization of AI nodes and global technology connectivity"
                             className="w-full h-[500px] object-cover"
                         />
