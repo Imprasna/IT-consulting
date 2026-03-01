@@ -30,7 +30,7 @@ const Hero = () => {
                     </h1>
 
                     <p className="text-xl text-slate-400 mb-8 max-w-lg leading-relaxed">
-                        Empowering global enterprises with cutting-edge SaaS solutions, robust IT consulting, and bespoke software development designed for the future.
+                        Empowering global enterprises with cutting-edge SaaS solutions, robust IT Solutions, and bespoke software development designed for the future.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4">

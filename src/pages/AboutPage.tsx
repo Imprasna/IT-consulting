@@ -56,7 +56,10 @@ const AboutPage = () => {
                                     From Vision to <span className="text-gradient-gold">Global Impact</span>
                                 </h3>
                                 <p className="text-slate-400 text-lg leading-relaxed mb-6">
-                                    Founded with a mission to bridge complex business challenges with cutting-edge technology, TechSprint has evolved from a boutique IT consultancy into a global powerhouse.
+                                    Founded with a mission to bridge complex business challenges with cutting-edge technology, TechSprint has evolved from a boutique IT Solutions into a global powerhouse.
+                                </p>
+                                <p className="text-slate-400 text-lg leading-relaxed mb-6">
+                                    Our CEO, <strong className='text-gradient-gold text-2xl'>G. Mageswaran</strong>, leads the company with visionary guidance and a commitment to excellence.
                                 </p>
                                 <p className="text-slate-400 text-lg leading-relaxed">
                                     Today, we serve clients across 20+ countries, delivering AI-powered solutions, enterprise software, cloud infrastructure, and optimized BPO services. Our team of 200+ experts works tirelessly to ensure your success.

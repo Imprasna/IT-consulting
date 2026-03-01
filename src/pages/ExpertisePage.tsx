@@ -13,7 +13,7 @@ const ExpertisePage = () => {
         { title: 'Travel & Tourism', desc: 'AI-powered trip planning.', icon: Globe2 },
         { title: 'Retail & E-commerce', desc: 'Modern retail experiences.', icon: ShoppingBag },
         { title: 'Aviation', desc: 'Innovation for air travel.', icon: Plane },
-        { title: 'Consulting', desc: 'Strategic digital guidance.', icon: Briefcase },
+        // { title: 'Consulting', desc: 'Strategic digital guidance.', icon: Briefcase },
     ];
 
     return (
